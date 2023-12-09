@@ -1,0 +1,79 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="{% static 'app/content/11.jpg'%} " alt="Первый слайд" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    История возникновения салонов
+                    <a class="btn btn-default" href="https://salonymoskvy.ru/blog/istoriya-vozniknoveniya-salonov-krasoty">
+                        Перейти
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'app/content/2.jpg'%}" alt="Второй слайд"  class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    История маникюра
+                    <a class="btn btn-default" href="https://pilitte.com/blog/sovety-pokupatelyam/istoriya-manikyura/">
+                        Перейти
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src=" {% static 'app/content/3.jpg'%} " alt="Третий слайд"  class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Факты про маникюр
+                    <a class="btn btn-default" href="https://makeup.ru/article/interesnye-fakty-o-manikjure">
+                        Перейти
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Наши услуги</h2>
+        <p>
+            Откройте для себя мир возможностей с нашими качественными услугами. Наша команда готова предложить вам индивидуальный подход и высокий уровень обслуживания. Познакомьтесь с нашими услугами и убедитесь в том, как мы можем сделать ваш опыт незабываемым.
+        </p>
+        <p><a class="btn btn-default" href="https://twentysurgut.ru/">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Отзывы о нас</h2>
+        <p>Узнайте, что говорят наши клиенты о наших товарах и услугах. Посмотрите наши отзывы, чтобы убедиться в качестве обслуживания и удовлетворенности наших покупателей. Ваше мнение важно для нас, и мы стремимся предоставлять только лучший опыт для каждого клиента</p>
+        <p><a class="btn btn-default" href="https://pypi.org/">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Новости</h2>
+        <p>Будь в курсе последних событий и новостей! Мы поддерживаем вас в актуальной информации и предоставляем самые свежие новости. Переходите по ссылке, чтобы узнать о последних событиях в мире, технологиях, культуре и многом другом.</p>
+        <p><a class="btn btn-default" href="https://studiotimedeluxe.com/news/">Узнать больше &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
